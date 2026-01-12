@@ -1,42 +1,90 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #e0e0e0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app {
+    display: flex;
+    min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.sidebar {
+    width: 250px;
+    background-color: #1a1a1a;
+    padding: 25px 0;
+    border-right: 1px solid #333;
 }
 
-.card {
-  padding: 2em;
+.sidebar h2 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #666;
+    padding: 0 25px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
 }
 
-.read-the-docs {
-  color: #888;
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 12px 25px;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+}
+
+.sidebar li:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.sidebar li.active {
+    background-color: #222;
+    color: #fff;
+    border-left: 3px solid #ff6b35;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-x: hidden;
+}
+
+.main-content h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.main-content h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.controls {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pagination-info {
+    margin: 25px 0;
+    font-size: 14px;
+    color: #888;
 }
