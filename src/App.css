@@ -88,3 +88,33 @@ body {
     font-size: 14px;
     color: #888;
 }
+
+.controls {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-info {
+    margin-bottom: 15px;
+    min-height: 20px;
+}
+
+.search-results {
+    font-size: 14px;
+    color: #ff6b35;
+    background-color: rgba(255, 107, 53, 0.1);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
