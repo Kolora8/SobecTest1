@@ -1,35 +1,24 @@
 export const users = [
     {
-        id: 0,
+        id: 1959,
         role: 'Админ',
         name: 'Александр',
-        login: 'semelDesigner',
-        position: 'FrontEnd разработчик',
+        login: 'alexndroDesigner',
+        position: 'Backend разработчик',
         contacts: '@test',
         email: 'test@test.ru',
-        phone: '+7-9999999999',
+        phone: '+7-999-999-99-99',
         city: 'Нижний Новгород'
     },
     {
-        id: 1,
+        id: 1960,
         role: 'Разработчик',
-        name: 'Василий',
+        name: 'Вася',
         login: 'vasyaDev',
-        position: 'BackEnd разработчик',
+        position: 'FrontEnd разработчик',
         contacts: '@vasya',
         email: 'vasya@test.ru',
-        phone: '+7-8888888888',
+        phone: '+7-888-888-88-88',
         city: 'Москва'
     },
-    {
-        id: 2,
-        role: 'Тимлид',
-        name: 'Ольга',
-        login: 'olgaManager',
-        position: 'FullStack разработчик',
-        contacts: '@olga',
-        email: 'olga@test.ru',
-        phone: '+7-7777777777',
-        city: 'Санкт-Петербург'
-    }
 ];

@@ -99,3 +99,87 @@
     background-color: #3a3a3a;
     color: #fff;
 }
+.form-hint {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.form-input:valid {
+    border-color: #222;
+}
+
+.form-input:invalid:not(:placeholder-shown) {
+    border-color: #ff6b35;
+}
+
+.form-label[required]::after {
+    content: ' *';
+    color: #ff6b35;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-label {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.form-label::after {
+    content: ' *';
+    color: #ff6b35;
+}
+
+.form-label:has(+ .form-input:not(:required))::after {
+    content: '';
+}
+
+.form-input {
+    padding: 10px 12px;
+    background-color: #1a1a1a;
+    border: 1px solid #222;
+    border-radius: 4px;
+    color: #ccc;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.form-input:hover {
+    border-color: #333;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.1);
+}
+
+.form-input.error {
+    border-color: #ff6b35;
+    box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.2);
+}
+
+.error-message {
+    font-size: 12px;
+    color: #ff6b35;
+    margin-top: 4px;
+}
+
+.form-hint {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* Стили для валидации */
+.form-input:valid:not(.error) {
+    border-color: #222;
+}
+
+.form-input:invalid:not(:placeholder-shown):not(.error) {
+    border-color: #ff6b35;
+}
