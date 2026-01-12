@@ -118,3 +118,38 @@ body {
     border-radius: 8px;
     border: 1px solid #333;
 }
+.controls {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+/* Адаптив на мобилки */
+@media (max-width: 1200px) {
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-container,
+    .dropdown-container,
+    .add-user-button {
+        width: 100%;
+    }
+
+    .add-user-button {
+        justify-content: center;
+    }
+}
+
+@keyframes highlightRow {
+    0% { background-color: rgba(255, 107, 53, 0.3); }
+    100% { background-color: transparent; }
+}
+
+.new-user {
+    animation: highlightRow 2s ease;
+}

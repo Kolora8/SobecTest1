@@ -1,8 +1,8 @@
 import './Table.css';
 
-const TableRow = ({ user }) => {
+const TableRow = ({ user, isNew }) => {
     return (
-        <tr>
+        <tr className={isNew ? 'new-user' : ''}>
             <td>{user.id}</td>
             <td>{user.role}</td>
             <td>{user.name}</td>
